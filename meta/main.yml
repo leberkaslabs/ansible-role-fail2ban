@@ -1,0 +1,21 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: fail2ban
+  author: dudecalledbro
+  description: Setup fail2ban on linux systems
+  license: License (MIT)
+  min_ansible_version: "2.15"
+  platforms:
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+
+  galaxy_tags:
+    - fail2ban
+    - security
+    - system

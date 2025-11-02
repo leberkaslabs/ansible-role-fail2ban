@@ -1,0 +1,5 @@
+---
+# https://github.com/apps/settings
+repository:
+  description: Setup fail2ban on linux systems
+  topics: ansible, ansible-galaxy, molecule, role

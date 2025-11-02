@@ -1,0 +1,7 @@
+---
+argument_specs:
+  main:
+    short_description: fail2ban
+    description: Setup fail2ban on linux systems
+    author: dudecalledbro
+    options: {}

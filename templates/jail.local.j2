@@ -1,0 +1,9 @@
+{{ ansible_managed | ansible.builtin.comment }}
+
+[sshd]
+enabled = true
+port    = ssh
+filter  = sshd
+{% if ansible_os_family == "Debian" and ansible_distribution_major_version | int >= 12 %}
+backend = systemd
+{% endif %}
