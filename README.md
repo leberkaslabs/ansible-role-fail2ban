@@ -1,6 +1,6 @@
 # Ansible Role: Users
 
-[![CI](https://github.com/leberkaslabs/ansible-role-fail2ban/actions/workflows/molecule.yml/badge.svg)](https://github.com/leberkaslabs/ansible-role-fail2ban/actions/workflows/molecule.yml)
+[![Ansible Molecule](https://github.com/leberkaslabs/ansible-role-fail2ban/actions/workflows/molecule.yml/badge.svg)](https://github.com/leberkaslabs/ansible-role-fail2ban/actions/workflows/molecule.yml)
 
 Setup fail2ban on linux systems.
 
