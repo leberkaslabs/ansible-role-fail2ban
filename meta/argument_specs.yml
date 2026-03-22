@@ -1,7 +1,7 @@
 ---
 argument_specs:
   main:
+    author: Niclas Spreng
+    description: Setup fail2ban on linux systems.
     short_description: fail2ban
-    description: Setup fail2ban on linux systems
-    author: dudecalledbro
     options: {}

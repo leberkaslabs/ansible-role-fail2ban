@@ -2,11 +2,13 @@
 dependencies: []
 
 galaxy_info:
-  role_name: fail2ban
-  author: dudecalledbro
-  description: Setup fail2ban on linux systems
-  license: License (MIT)
+  author: Niclas Spreng
+  description: Setup fail2ban on linux systems.
+  license: MIT
   min_ansible_version: "2.15"
+  namespace: leberkaslabs
+  role_name: fail2ban
+
   platforms:
     - name: Debian
       versions:

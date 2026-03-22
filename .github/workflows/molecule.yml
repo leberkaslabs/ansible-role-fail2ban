@@ -1,13 +1,10 @@
 ---
 name: Ansible Molecule
 
-on:
+'on':
   push:
     branches:
       - main
-  schedule:
-    # At 12:00 on Monday.
-    - cron: "0 12 * * 1"
 
 jobs:
   molecule:
@@ -22,20 +19,20 @@ jobs:
           - image: molecule-rockylinux-9
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v5
+      - name: Checkout
+        uses: actions/checkout@v5
 
-    - name: Setup Python
-      uses: actions/setup-python@v6
-      with:
-        python-version: '3.13'
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
 
-    - name: Install Python dependencies
-      run: pip3 install -r requirements.txt
+      - name: Install Python dependencies
+        run: pip3 install -r requirements.txt
 
-    - name: Run Molecule
-      run: molecule test
-      env:
-        PY_COLORS: '1'
-        ANSIBLE_FORCE_COLOR: '1'
-        IMAGE: ${{ matrix.image }}
+      - name: Run Molecule
+        run: molecule test
+        env:
+          PY_COLORS: '1'
+          ANSIBLE_FORCE_COLOR: '1'
+          IMAGE: ${{ matrix.image }}

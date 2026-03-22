@@ -11,4 +11,4 @@
       when: ansible_os_family == "Debian"
 
   roles:
-    - dudecalledbro.fail2ban
+    - leberkaslabs.fail2ban
